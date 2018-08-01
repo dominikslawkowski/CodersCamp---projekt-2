@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+/* The beginning of the offers section styles */
+
+#s3-offers-section {
+  height: 100vh;
+  widows: 100vw;
+  background:rgb(48, 47, 47);
+  color: white;
+  font-size:26px;
+}
+
+.s3-offers-box {
+  padding: 8vh 5vw;
+  box-sizing: border-box;
+  height: auto;
+}
+
+
+.s3-offer {
+  box-sizing: border-box;
+  height: 23vh;
+  margin-bottom: 5vh;
+  padding: 15px;
+  background:rgb(24, 23, 23)
+}
+
+@media (max-width: 786px) {
+  #s3-offers-section {
+    height: 300vh;
+    widows: 100vw;
+  }
+}
+/* The end of the offers section styles */
