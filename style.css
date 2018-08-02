@@ -50,30 +50,38 @@ body {
 
 .sn5_container {
     margin: 0 auto;
+    width: 70%;
     min-width: 1000px;
-    max-width: 70%;
     overflow-x: hidden;
-    display: flex;
-    align-content: stretch;
 }
 
 @media only screen and (max-width: 1100px){
    .sn5_container {
        min-width: 600px;
-       max-width: 90%;
+       width: 90%;
    }
 }
 
 @media only screen and (max-width: 620px) {
     .sn5_container {
         min-width: 0px;
-        max-width: 98%;
+        width: 98%;
     }
 }
 
-.sn5_container_gallery {
-    width: 100%;
+.sn5_gallery-wrapper{
     display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    width: 300%;
+    position: relative;
+    top: 0;
+    transition: all 400ms;
+}
+
+.sn5_container_gallery {
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
@@ -254,8 +262,8 @@ p.sn5-desc {
 }
 
 .sn5_nav {
-    min-width: 200px;
-    max-width: 40%;
+    min-width:1000px;
+    width: 70%;
     font-size: 0.9rem;
     color: var(--a-color);
     text-transform: uppercase;
@@ -265,12 +273,16 @@ p.sn5-desc {
     padding: 0.4rem 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: var(--b-color);
+    background-color: var(--c-color);
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
 }
 
 @media only screen and (max-width: 1100px) {
     .sn5_nav {
-        max-width: 70%;
+        min-width: 600px;
+        width: 90%;
     }
 }
 
@@ -278,9 +290,41 @@ p.sn5-desc {
     .sn5_nav {
         min-width: 98%;
         max-width: 98%;
+        transition: all 400ms;
+    }
+    .sn5_nav_fixed {
         position: fixed;
-        bottom: 1em;
+        animation: sn5-navbar 400ms;
+        animation-fill-mode: forwards;
         left: 0;
         margin-left: 1%;
     }
+}
+@keyframes sn5-navbar {
+    from {
+        bottom: -10em;
+    }
+    to {
+        bottom: 1em;
+    }
+}
+.sn5_nav_dot-btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--a-color);
+    border: solid 1px var(--b-color);
+    cursor: pointer;
+    margin: 5px;
+}
+@media only screen and (max-width: 620px) {
+    .sn5_nav_dot-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+    }
+}
+.sn5_nav_dot-btn:hover{
+    background-color: var(--c-color);
+    border: solid 1px var(--a-color);
 }
