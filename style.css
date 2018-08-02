@@ -6,7 +6,7 @@ body {
 
 #s3-offers-section {
   height: 100vh;
-  widows: 100vw;
+  width: 100vw;
   background:rgb(48, 47, 47);
   color: white;
   font-size:26px;
@@ -27,10 +27,10 @@ body {
   background:rgb(24, 23, 23)
 }
 
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
   #s3-offers-section {
     height: 300vh;
-    widows: 100vw;
+    width: 100vw;
   }
 }
 /* The end of the offers section styles */
