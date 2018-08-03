@@ -335,86 +335,25 @@ p.sn5-desc {
 }
 
 /*photo is clicked*/
-
-.sn5_container_gallery_img-positioner.sn5_clicked {
-  opacity: 1;
+.sn5_bigBG{
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
-
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5_gallery-image {
-  transform: none;
+.sn5_bigBG_positioner{
   width: 100%;
-  padding: 1% 2%;
-  padding: 10px;
-  margin: 2em 0;
-  background-image: none !important;
-  background-color: rgba(63, 63, 63, 0.7);
-  opacity: 1;
-  transition: transform 200ms;
+  height: 70%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5_gallery-image img {
-  width: 50%;
-  min-width: 300px;
-  height: auto;
-}
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5_big-nav {
-  width: 100%;
-  height: 3rem;
-  position: absolute;
-  bottom: 20vh;
-  left: 0;
-  background-color: rgba(63, 63, 63, 0.7);
-  border-top: black 1px solid;
-  border-bottom: black 1px solid;
-  opacity: 1;
-  transition: all 200ms;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5_bignaviButton {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 2rem;
-  background-color: var(--a-color);
-  border: solid 1px var(--a-color);
-  font-size: 1rem;
-  color: var(--c-color);
-  font-family: "Roboto";
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-  margin: 0 1.5rem;
-}
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5_bignaviButton:hover {
-  border: solid 1px var(--a-color);
-  background-color: var(--c-color);
-  color: var(--a-color);
-}
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5-top-orn,
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5-bot-orn,
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5-mid-orn,
-.sn5_container_gallery_img-positioner.sn5_clicked .sn5-desc {
-  display: none;
 }
