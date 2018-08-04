@@ -1,6 +1,8 @@
-//IExplorer supported;
+/*Author: Maciej Bartyński*/
+/*You can use, you can edit*/
 
-/** Sets fit-position and starts to listen for window resize;
+//IExplorer supported;
+/** Sets fit-position and starts to listen for window resize:
 fit.cover(positioned, positioner) **/
 /** Sets fit-position;
 fit.aToB(positioned, positioner) **/
