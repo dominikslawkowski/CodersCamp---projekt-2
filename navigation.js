@@ -1,6 +1,6 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', initializeNavBar);
-let secs = ['.scroll-to-start', '.scroll-to-about', '.scroll-to-offer', '.scroll-to-gallery', '.scroll-to-contact'];
+//let secs = ['.scroll-to-start', '.scroll-to-about', '.scroll-to-offer', '.scroll-to-gallery', '.scroll-to-contact'];
 
 function initializeNavBar() {
     initializeNavContainerHeight();
