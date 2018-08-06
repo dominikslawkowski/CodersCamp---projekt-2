@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+/* The beginning of the offers section styles */
+
+#s5-contact-section {   
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(48, 47, 47);
+  box-sizing: border-box;
+  color: #c6e2ff;
+}
+
+.s5-contact-box {
+  padding: 4vh 2vw;  
+  height: auto;
+}
+
+
+.s5-header {  
+  font-family: "Vibur", cursive;
+  padding-bottom: 2vw;
+  min-height: 100%;
+  font-size: 5vw;
+  text-align: center;
+  animation: neon .08s ease-in-out infinite alternate;
+  position: relative;
+  bottom: 4vh;
+  margin: 2vh;
+}
+
+.s5-box-phone{
+  padding: 5vw;
+  font-size: 3vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  right: 15vw;
+  margin-top: 2vh;
+}
+
+.s5-box-email{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 3vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 1vh;
+  left: 15vw;
+}
+
+.s5-box-icons{
+  display: flex;
+  flex-direction: row;
+  font-size: 5vw;
+  justify-content: space-around;
+  position: relative;
+  top: 4vh;
+}
+
+a {
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #s5-contact-section {
+    height: 300vh;
+    width: 100vw;
+  }
+}
+/* The end of the offers section styles */
