@@ -1,0 +1,329 @@
+
+/* ---------------------------------------- section 2 */
+
+html{
+    --s2-bgColor: rgb(35, 35, 35);
+    --s2-articleColor: rgb(17, 17, 17);
+    --s2-fontColor: rgb(196,196,196);
+    --s2-pararellColor: rgb(53, 53, 53);
+    --s2-smileIconColor: rgb(9, 9, 9);
+}
+
+body{
+    margin: 0;
+    color: var(--s2-fontColor);
+    background-color: var(--s2-bgColor);
+}
+
+.s2-wrapper{
+    font-size: 16px;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+
+    
+    
+}
+
+
+.s2-origin-skills {
+    background-color: var(--s2-articleColor);
+    width: 22%;
+    height: 78%;
+    margin-left: calc(1/26 * 100%);
+    margin-right: calc(1/26 * 100%);
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    
+
+}
+
+.s2-origin-skills h1{
+    box-sizing: border-box;
+    padding: 10% 5% 10% 5%;
+    font-size: 3em;
+    font-weight: 300;
+    height: 20%;
+    margin: 0;
+    letter-spacing: 0.2em;
+    max-width: 100%;
+}
+
+.s2-origin-skills h2{
+    padding: 0 7.5% 0 7.5%;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 175%;
+    margin: 0;
+}
+
+
+
+.s2-name {
+    background-color: var(--s2-articleColor);
+    width: 30%;
+    height: 78%;
+    overflow: hidden;
+    margin-left: calc(1/26 * 100%);
+    margin-right: calc(1/26 * 100%);
+    text-align: center;
+    
+}
+
+.s2-name h1{
+    box-sizing: border-box;
+    padding: calc(2.2/30*100%) calc(1.1/30*100%) calc(2.2/30*100%) calc(1.1/30*100%);   /* padding policzony pod width:30% diva .s2-name*/
+    font-size: 3em;
+    font-weight: 300;
+    height: 20%;
+    margin: 0;
+    letter-spacing: 0.25em;
+    max-width: 100%;
+}
+
+.s2-name h2{
+    box-sizing: border-box;
+    padding: 0 5% 0 5%;
+    font-size: 1.25em;
+    line-height: 175%;
+    margin: 0;
+    max-height: 30%;
+    overflow: hidden;
+}
+
+.s2-parallelContainer{
+    overflow: hidden;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.s2-parallelContainer .s2-parallel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    height: 60%;
+    background-color: var(--s2-pararellColor);
+    transform: skewY(-10deg);
+    overflow: hidden;
+   
+    
+}
+
+.s2-smileIcon {
+    transform: skewY(10deg);
+    font-size:7.5em;
+    font-weight: 900;
+    color: var(--s2-smileIconColor);
+}
+
+.s2-bouncingAnimation{
+    animation: s2-bouncing 2s ease-in 0.2s 1 forwards;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .s2-wrapper{
+        display: block;
+        min-width: 320px;
+        height: auto;
+        padding-bottom: 10%;
+        
+    }
+
+    .s2-wrapper h1{
+        padding: 5% 5% 5% 5%;
+    }
+    .s2-wrapper h2{
+        margin-bottom: 5%;
+    }
+    .s2-origin-skills {
+        background-color: var(--s2-articleColor);
+        width: 80%;
+        height: auto;
+        margin: 10%;
+        opacity: 1;
+    }
+    
+
+    .s2-name {
+        background-color: var(--s2-articleColor);
+        width: 80%;
+        height: 70vh;
+        min-height: 450px;
+        margin: 10%;
+
+    }
+}
+
+@media screen and (min-width:320px){
+    
+
+    .s2-name h2 {
+        font-size: 0.9em;
+    }
+    .s2-name {
+    
+        max-height: 500px;
+    }
+    
+ }
+ 
+ @media screen and (min-width:360px){
+    .s2-name{
+        
+       min-height: 450px;
+        
+    }
+ }
+ 
+ @media screen and (min-width:411px){
+    .s2-wrapper{
+        
+        font-size: 1.125em;
+    }
+ }
+ 
+ @media screen and (min-width:480px){
+    .s2-wrapper{
+        font-size:1.25em; 
+    }
+    .s2-name{
+        min-height: 550px;
+    }
+ }
+
+ @media screen and (min-width:600px){
+    .s2-wrapper{
+        font-size:1.4em;
+    }
+   .s2-name{
+        min-height: 640px;
+        max-height: 740px;
+    }
+    .s2-name h2{
+                
+        font-size: 1.1em;
+    }
+ }
+
+@media screen and (min-width:769px){
+
+    .s2-wrapper{
+        
+        font-size: 12px;
+        min-height: 550px;
+        
+    }
+
+    .s2-origin-skills{
+        min-height: 450px;
+    }
+    .s2-name {
+        width: 30%;
+        height: 78%;
+        max-height: 78%;
+        min-height: 450px;
+    }
+    .s2-name h2{
+        
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:1000px){
+
+    .s2-wrapper{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .s2-wrapper{
+        font-size: 16px;
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width:1400px){
+
+    .s2-wrapper{
+        font-size: 20px;
+        min-height: 800px;
+    }
+
+    .s2-name h2{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:1600px){
+
+    .s2-wrapper{
+        font-size: 22px;
+        min-height: 850px;
+    }
+}
+
+@media screen and (min-width:1800px){
+
+    .s2-wrapper{
+        font-size: 24px;
+        min-height: 1000px;
+    }
+}
+
+
+
+
+@keyframes s2-bouncing {
+    0%{
+        opacity: 0;
+        transform: translateY(-60px)
+    }
+    10%{
+       opacity: 0.9;
+    }
+    20%{
+        transform: translateY(0px)
+    }
+    30%{
+        transform: translateY(-30px)
+    }
+    50%{
+        transform: translateY(0px)
+    }
+    60%{
+        transform: translateY(-15px)
+    }
+    70%{
+        transform: translateY(0px)
+    }
+    80%{
+        transform: translateY(-10px)
+    }
+    90%{
+        transform: translateY(0px)
+    }
+    95%{
+        transform: translateY(-5px)
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
