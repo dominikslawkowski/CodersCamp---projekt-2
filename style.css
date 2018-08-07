@@ -2,14 +2,46 @@ body {
   margin: 0;
 }
 
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 0;
+  width: 200px;
+  font-size: 1.075em;
+  color: var(--white);
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--white);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+:root {
+  --gold: rgb(189, 165, 33);
+  --white: rgb(199, 199, 199);
+}
+
+p {
+  width: 75%;
+  padding: 4px 0;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
 /* The beginning of the offers section styles */
 
 #s3-offers-section {
   height: 100vh;
-  width: 100vw;
-  background:rgb(48, 47, 47);
-  color: white;
-  font-size:26px;
+  widows: 100vw;
+  background: rgb(48, 47, 47);
+  color: var(--white);
 }
 
 .s3-offers-box {
@@ -18,19 +50,96 @@ body {
   height: auto;
 }
 
-
 .s3-offer {
   box-sizing: border-box;
-  height: 23vh;
-  margin-bottom: 5vh;
+  height: 24vh;
+  margin-bottom: 4vh;
   padding: 15px;
-  background:rgb(24, 23, 23)
+  position: relative;
+  background: rgb(24, 23, 23);
 }
 
-@media screen and (max-width: 786px) {
+.buy {
+  position: absolute;
+  top: 50%;
+  left: 88%;
+  border: 1.5px solid var(--white);
+  padding: 4px 35px;
+  border-radius: 500px;
+}
+
+.premium-offer {
+  border: 2px var(--gold) solid;
+}
+
+.premium-title {
+  margin: 0;
+  width: 200px;
+  font-size: 1.075em;
+  color: var(--gold);
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--gold);
+}
+
+.premium {
+  border: 1.5px var(--gold) solid;
+  color: var(--gold);
+}
+
+.buy:hover {
+  background-color: rgba(199, 199, 199, 0.1);
+  animation: s3-animation 1s linear;
+}
+
+@media (max-width: 1080px) {
+  .buy {
+    top: 80%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+  }
   #s3-offers-section {
-    height: 300vh;
-    width: 100vw;
+    height: auto;
+  }
+  .s3-offer {
+    height: 40vh;
+  }
+  p {
+    width: auto;
+    margin-top: 10px;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 760px) {
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .premium-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #s3-offers-section {
+    height: auto;
+  }
+  .s3-offer {
+    height: 60vh;
   }
 }
 /* The end of the offers section styles */
+
+@keyframes s3-animation {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
