@@ -8,7 +8,7 @@ html {
   font-size: 24px;
 }
 
-h2 {
+#s3-offers-section h2 {
   margin: 0;
   width: 200px;
   font-size: 1.075em;
@@ -18,7 +18,7 @@ h2 {
   font-weight: 600;
 }
 
-a {
+#s3-offers-section a {
   text-decoration: none;
   color: var(--white);
 }
@@ -28,7 +28,7 @@ a {
   --white: rgb(199, 199, 199);
 }
 
-p {
+#s3-offers-section p {
   width: 75%;
   padding: 4px 0;
   margin: 0;
@@ -59,7 +59,7 @@ p {
   background: rgb(24, 23, 23);
 }
 
-.buy {
+.s3-buy {
   position: absolute;
   top: 50%;
   left: 88%;
@@ -68,11 +68,11 @@ p {
   border-radius: 500px;
 }
 
-.premium-offer {
+.s3-premium-offer {
   border: 2px var(--gold) solid;
 }
 
-.premium-title {
+.s3-premium-title {
   margin: 0;
   width: 200px;
   font-size: 1.075em;
@@ -81,18 +81,18 @@ p {
   border-bottom: 1px solid var(--gold);
 }
 
-.premium {
+.s3-premium {
   border: 1.5px var(--gold) solid;
   color: var(--gold);
 }
 
-.buy:hover {
+.s3-buy:hover {
   background-color: rgba(199, 199, 199, 0.1);
   animation: s3-animation 1s linear;
 }
 
 @media (max-width: 1080px) {
-  .buy {
+  .s3-buy {
     top: 80%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
@@ -103,7 +103,7 @@ p {
   .s3-offer {
     height: 40vh;
   }
-  p {
+  #s3-offers-section p {
     width: auto;
     margin-top: 10px;
     font-size: 0.6rem;
@@ -111,12 +111,12 @@ p {
 }
 
 @media (max-width: 760px) {
-  h2 {
+  #s3-offers-section h2 {
     margin: 0 auto;
     text-align: center;
   }
 
-  .premium-title {
+  .s3-premium-title {
     margin: 0 auto;
     text-align: center;
   }
