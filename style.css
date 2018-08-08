@@ -158,3 +158,246 @@ html {
     opacity: 1;
   }
 }
+/* The beginning of the contact section styles */
+
+#s5-contact-section {   
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(48, 47, 47);
+  box-sizing: border-box;
+  color: #c6e2ff;
+}
+
+.s5-contact-box { 
+  padding: 1vw;
+  height: auto;
+}
+
+
+.s5-header {  
+  font-family: "Vibur", cursive;
+  padding-bottom: 2vw;
+  min-height: 100%;
+  font-size: 5em;
+  text-align: center;
+  animation: neon .08s ease-in-out infinite alternate;
+  position: relative;
+  bottom: 4vh;
+  margin: 2vh;
+}
+
+.s5-box-phone{
+  padding: 4vw;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  right: 15vw;
+  top: 2vw;
+  margin-top: 2vh;  
+  animation: neon .08s ease-in-out infinite alternate;
+}
+
+.s5-box-email{
+  padding: 4vw;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 2vh;
+  left: 15vw;
+  animation: neon .08s ease-in-out infinite alternate;
+}
+
+.s5-box-icons{
+  display: flex;
+  flex-direction: row;
+  font-size: 5em;
+  justify-content: space-around;
+  position: relative;
+  top: 3vh;
+}
+
+a {
+  color: #fff;
+  outline: 0;
+  text-decoration: none; 
+}
+
+.fa-facebook-f:hover{   
+  animation: neonfacebook .08s ease-in-out infinite alternate;
+}
+
+.fa-youtube:hover{   
+  animation: neonyoutube .08s ease-in-out infinite alternate;
+}
+
+.fa-twitter:hover{   
+  animation: neontwitter .08s ease-in-out infinite alternate;
+}
+
+.fa-instagram:hover{   
+  animation: neoninstagram .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+@keyframes neonfacebook {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+@keyframes neonyoutube {
+  from {
+    text-shadow:
+    0 0 6px rgba(228, 202, 202, 0.92),
+    0 0 30px rgba(228, 202, 202, 0.34),
+    0 0 12px rgba(196, 18, 41,0.52),
+    0 0 21px rgba(196, 18, 41,0.92),
+    0 0 34px rgba(196, 18, 41,0.78),
+    0 0 54px rgba(196, 18, 41,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(228, 202, 202, 0.98),
+    0 0 30px rgba(228, 202, 202, 0.42),
+    0 0 12px rgba(196, 18, 41,0.58),
+    0 0 22px rgba(196, 18, 41,0.84),
+    0 0 38px rgba(196, 18, 41,0.88),
+    0 0 60px rgba(196, 18, 41, 1);
+  }
+}
+
+@keyframes neontwitter {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(29, 202, 255,0.52),
+    0 0 21px rgba(29, 202, 255,0.92),
+    0 0 34px rgba(29, 202, 255,0.78),
+    0 0 54px rgba(29, 202, 255,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(29, 202, 255,0.58),
+    0 0 22px rgba(29, 202, 255,0.84),
+    0 0 38px rgba(29, 202, 255,0.88),
+    0 0 60px rgba(29, 202, 255,1);
+  }
+}
+
+@keyframes neoninstagram {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(209, 228, 202, 0.34),
+    0 0 12px rgba(253, 244, 151,0.52),
+    0 0 21px rgba(253, 89, 73,0.92),
+    0 0 34px rgba(214, 36, 159,0.78),
+    0 0 54px rgba(40, 90, 235,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(209,228,205,0.42),
+    0 0 12px rgba(253, 244, 151,0.58),
+    0 0 22px rgba(253, 89, 73,0.84),
+    0 0 38px rgba(214, 36, 159,0.88),
+    0 0 60px rgba(40, 90, 235,1);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #s5-contact-section {
+    font-size: 12px;
+    transition: all 1s ease-out
+  }
+  .s5-box-phone{
+    right: 0vw;
+    top: 0vw;
+    transition: all 1s ease-out    
+  }
+  .s5-box-email{
+    bottom: 0vh;
+    left: 0vw;
+    transition: all 1s ease-out 
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #s5-contact-section {
+    font-size: 8px;
+    transition: all 1s ease-out
+  }
+} 
+
+@media screen and (min-width: 680px) and (max-width: 960px){
+  #s5-contact-section {
+    font-size: 12px;
+    transition: all 1s ease-out
+  }
+} 
+
+@media screen and (min-width: 960px) {
+  #s5-contact-section {
+    font-size: 16px;
+    transition: all 1s ease-out
+  }
+  .s5-box-phone{
+    right: 15vw;
+    top: 2vw;
+    transition: all 1s ease-out    
+  }
+  .s5-box-email{
+    bottom: 2vh;
+    left: 15vw;
+    transition: all 1s ease-out 
+  }
+}
+/* The end of the contact section styles */
