@@ -38,8 +38,8 @@ html {
 /* The beginning of the offers section styles */
 
 #s3-offers-section {
-  height: 100vh;
-  widows: 100vw;
+  height: 100%;
+  widows: 100%;
   background: rgb(48, 47, 47);
   color: var(--white);
 }
@@ -165,8 +165,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   font-size: 16px;
   background-size: cover;
   background-position: center;
