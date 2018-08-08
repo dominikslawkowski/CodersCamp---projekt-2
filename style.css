@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-/* The beginning of the offers section styles */
+/* The beginning of the contact section styles */
 
 #s5-contact-section {   
   display: flex;  
@@ -30,7 +30,7 @@ body {
   font-family: "Vibur", cursive;
   padding-bottom: 2vw;
   min-height: 100%;
-  font-size: 5rem;
+  font-size: 5em;
   text-align: center;
   animation: neon .08s ease-in-out infinite alternate;
   position: relative;
@@ -40,7 +40,7 @@ body {
 
 .s5-box-phone{
   padding: 4vw;
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
@@ -52,7 +52,7 @@ body {
 
 .s5-box-email{
   padding: 4vw;
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
@@ -64,7 +64,7 @@ body {
 .s5-box-icons{
   display: flex;
   flex-direction: row;
-  font-size: 5rem;
+  font-size: 5em;
   justify-content: space-around;
   position: relative;
   top: 3vh;
@@ -198,6 +198,10 @@ a {
 }
 
 @media screen and (max-width: 960px) {
+  #s5-contact-section {
+    font-size: 12px;
+    transition: all 1s ease-out
+  }
   .s5-box-phone{
     right: 0vw;
     top: 0vw;
@@ -210,7 +214,25 @@ a {
   }
 }
 
+@media screen and (max-width: 680px) {
+  #s5-contact-section {
+    font-size: 8px;
+    transition: all 1s ease-out
+  }
+} 
+
+@media screen and (min-width: 680px) and (max-width: 960px){
+  #s5-contact-section {
+    font-size: 12px;
+    transition: all 1s ease-out
+  }
+} 
+
 @media screen and (min-width: 960px) {
+  #s5-contact-section {
+    font-size: 16px;
+    transition: all 1s ease-out
+  }
   .s5-box-phone{
     right: 15vw;
     top: 2vw;
@@ -222,4 +244,4 @@ a {
     transition: all 1s ease-out 
   }
 }
-/* The end of the offers section styles */
+/* The end of the contact section styles */
