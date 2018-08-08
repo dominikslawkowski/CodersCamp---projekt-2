@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>2 projekt</title>
+    <meta charset="utf8" />
+    <meta name="description" content="2 projekt" />
+    <meta name="keywords" content="2 projekt" />
+    <meta http equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900i&amp;subset=latin-ext" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<div class="Logo"></div>
+  <div class="Title">Name Surname</div></div>
+  <div class="Title2">subtitle 1 / subtitle 2 / subtitle 3</div></div>
+<div class="Logo2">  </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
