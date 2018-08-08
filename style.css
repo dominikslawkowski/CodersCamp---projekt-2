@@ -99,19 +99,29 @@ html {
   }
   #s3-offers-section {
     height: auto;
+    width: 100vw;
   }
   .s3-offer {
-    height: 40vh;
+    height: auto;
   }
   #s3-offers-section p {
     width: auto;
     margin-top: 10px;
     font-size: 0.6rem;
+    padding-bottom: 10%;
   }
 }
 
 @media (max-width: 760px) {
   #s3-offers-section h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .s3-buy {
+    position: initial;
+    transform: none;
+    width: 40px;
     margin: 0 auto;
     text-align: center;
   }
@@ -126,8 +136,13 @@ html {
   #s3-offers-section {
     height: auto;
   }
+
+  #s3-offers-section p {
+    margin-bottom: 2%;
+  }
+
   .s3-offer {
-    height: 60vh;
+    height: auto;
   }
 }
 /* The end of the offers section styles */
