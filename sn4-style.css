@@ -1,5 +1,5 @@
 :root {
-  --a-color: #232323;
+  --a-color: #404040;
   --b-color: #414141;
   --c-color: #a3a3a3;
 }
@@ -15,6 +15,7 @@ body {
 .sn4 {
   box-sizing: border-box;
   width: 100%;
+  height: auto;
   min-height: 100vh;
   background-color: var(--a-color);
   font-size: 16px;

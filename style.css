@@ -439,7 +439,7 @@ body {
 
 :root {
   --gold: rgb(189, 165, 33);
-  --white: rgb(199, 199, 199);
+  --white: rgb(196,196,196);
 }
 
 #s3-offers-section p {
@@ -454,7 +454,7 @@ body {
 #s3-offers-section {
   height: 100%;
   widows: 100%;
-  background: rgb(48, 47, 47);
+  background: #404040;
   color: var(--white);
 }
 
@@ -585,7 +585,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(48, 47, 47);
+  background-color: #404040;
   box-sizing: border-box;
   color: #c6e2ff;
 }
