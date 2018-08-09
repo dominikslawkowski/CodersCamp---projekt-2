@@ -15,6 +15,103 @@ html {
     --s2-smileIconColor: rgb(9, 9, 9);
 }
 
+
+body {
+  background-color: #404040;
+  font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-to-start {
+  width: 100vw;
+  height: 100vh;
+}
+
+.s1-container {
+  position: relative;
+  width: 500px;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Logo {
+  animation: log1 1s ease-in-out;
+  transition: all 3s ease-in-out;
+  width: 100%;
+  height: 60%;
+  left: -5%;
+  top: 45%;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  background: #1f1e1e;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.Logo2 {
+  animation: log2 1s ease-in-out;
+  transition: all 3s ease-in-out;
+  width: 100%;
+  height: 60%;
+  left: 20%;
+  top: 40%;
+  opacity: 0.5;
+  position: absolute;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  background: #1f1e1e;
+}
+
+.Title {
+  left: 18%;
+  top: 50%;
+  width: 100%;
+  height: 10%;
+  font-size: 54px;
+  letter-spacing: 3px;
+  position: absolute;
+  color: white;
+  z-index: 3;
+}
+
+.Title2 {
+  left: 15%;
+  top: 75%;
+  width: 100%;
+  height: 10%;
+  font-size: em;
+  margin: auto;
+  letter-spacing: 3px;
+  position: absolute;
+  color: white;
+  z-index: 3;
+}
+
+@media (max-width:680px) {
+  .Title {
+    font-size: 14px;
+  }
+}
+
+@keyframes log1 {
+  0% {
+    left: -50%
+  }
+}
+
+@keyframes log2 {
+  0% {
+    left: 80%
+  }
+}
+
+
 .s2-wrapper{
     font-size: 16px;
     box-sizing: border-box;
