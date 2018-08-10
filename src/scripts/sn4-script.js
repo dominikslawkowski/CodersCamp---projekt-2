@@ -1,3 +1,6 @@
+import zenscroll from './zenscroll-min.js';
+import {fit} from './fitsizing.js';
+import './zenscroll-min.js';
 'use strict';
 document.addEventListener('DOMContentLoaded', initializeGallerySection);
 
@@ -46,7 +49,7 @@ function stickyGalleryMobileNavScrollingDown(newPosition) {
     let gallery = document.querySelector('.sn4_gallery-wrapper');
     let roof = gallery.offsetTop;
     let floor = roof + gallery.offsetHeight;
-    let perimeter = (window.innerHeight / 3) * 2;
+    let perimeter = (window.innerHeight / 3) * 3;
     if (newPosition > roof && (newPosition + perimeter) < floor) {
         document.querySelector('.sn4_nav').classList.add('sn4_nav_fixed');
     } else {
@@ -59,9 +62,9 @@ function stickyGalleryMobileNavScrollingUp(newPosition) {
     let roof = gallery.offsetTop;
     let floor = roof + gallery.offsetHeight;
     let perimeter = window.innerHeight / 3;
-    if (newPosition < roof - perimeter) {
+    if (newPosition < roof /*- perimeter*/) {
         document.querySelector('.sn4_nav').classList.remove('sn4_nav_fixed');
-    } else if (newPosition < floor - (perimeter * 2) && newPosition > roof - perimeter - 1) {
+    } else if (newPosition < floor - (perimeter * 3/*2*/) && newPosition > roof /*- perimeter - 1*/) {
         document.querySelector('.sn4_nav').classList.add('sn4_nav_fixed');
     }
 }
@@ -94,7 +97,7 @@ function createBigGallery(ids, idx) {
     let positioner = document.createElement('div');
     positioner.classList.add('sn4_bigBG_positioner');
     let IMG = document.createElement('img');
-    IMG.setAttribute('src', './gallery/photo-' + id + '.jpg');
+    IMG.setAttribute('src', './build/gallery/photo-' + id + '.jpg');
     bigBG.appendChild(positioner);
     positioner.appendChild(IMG);
     document.body.appendChild(bigBG);
@@ -144,7 +147,7 @@ function letThisWork(btn, img, ids, dir) {
         img.classList.remove('sn4_fade-out-in');
         setTimeout(function () {img.classList.add('sn4_fade-out-in')},0);
         setTimeout(function () {
-            img.setAttribute('src', './gallery/photo-' + ids[bigGallerySwapCounter] + '.jpg')
+            img.setAttribute('src', './build/gallery/photo-' + ids[bigGallerySwapCounter] + '.jpg')
         }, 0);
     });
 }
