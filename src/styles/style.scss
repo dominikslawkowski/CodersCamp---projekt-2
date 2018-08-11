@@ -136,6 +136,10 @@ body {
   padding-bottom: 5%;
 }
 
+.s2-wrapper h2 {
+  font-weight: 300;
+}
+
 .s2-origin-skills {
   background-color: var(--s2-articleColor);
   width: 22%;
@@ -251,53 +255,39 @@ body {
   .s2-name {
     background-color: var(--s2-articleColor);
     width: 80%;
-    height: 70vh;
-    min-height: 450px;
+    height: auto;
+    min-height: 400px;
     margin: 10%;
+  }
+
+  .s2-name h2 {
+    font-size: 0.9em;
+  }
+
+  .s2-parallelContainer {
+   height: 220px;                 
   }
 }
 
 @media screen and (min-width:320px) {
-  .s2-name h2 {
-    font-size: 0.9em;
-  }
+  
   .s2-name {
     max-height: 500px;
   }
 }
 
-@media screen and (min-width:360px) {
-  .s2-name {
-    min-height: 450px;
-  }
-}
-
-@media screen and (min-width:411px) {
-  .s2-wrapper {
-    font-size: 1.125em;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .s2-wrapper {
-    font-size: 1.25em;
-  }
-  .s2-name {
-    min-height: 550px;
-  }
-}
-
-@media screen and (min-width:600px) {
-  .s2-wrapper {
-    font-size: 1.4em;
-  }
-  .s2-name {
-    min-height: 640px;
-    max-height: 740px;
-  }
+@media screen and (min-width:600px) and (max-width: 768px) {
+ 
   .s2-name h2 {
     font-size: 1.1em;
   }
+  .s2-parallelContainer {
+    height: 270px;                  
+   }
+
+   .s2-smileIcon {
+     font-size : 8.5em;        
+   }
 }
 
 @media screen and (min-width:769px) {
@@ -397,7 +387,7 @@ body {
 #s3-offers-section h2 {
   margin: 0;
   width: 200px;
-  font-size: 1.075em;
+  font-size: 1.3em;
   color: var(--white);
   padding-bottom: 0.2em;
   border-bottom: 1px solid var(--white);
@@ -418,7 +408,7 @@ body {
   width: 75%;
   padding: 4px 0;
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
 
 /* The beginning of the offers section styles */
@@ -447,6 +437,7 @@ body {
 }
 
 .s3-buy {
+  font-size: 1.3em; 
   position: absolute;
   top: 50%;
   left: 88%;
@@ -496,7 +487,7 @@ body {
   #s3-offers-section p {
     width: auto;
     margin-top: 10px;
-    font-size: 0.6rem;
+    font-size: 1rem;
     padding-bottom: 10%;
   }
 }
@@ -517,6 +508,12 @@ body {
     margin: 0 auto;
     text-align: center;
   }
+  #s3-offers-section p {
+    font-size: 0.9rem;    
+  }
+  .s3-buy {
+    font-size: 1.2em; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -525,9 +522,13 @@ body {
   }
   #s3-offers-section p {
     margin-bottom: 2%;
+    font-size: 0.8rem;
   }
   .s3-offer {
     height: auto;
+  }
+  .s3-buy {
+    font-size: 1.1em; 
   }
 }
 
