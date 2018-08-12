@@ -10,6 +10,7 @@
  * I also utilise the jQuery.doTimeout plugin for the data-sequence functionality so here is a link back to them.
  * http://benalman.com/projects/jquery-dotimeout-plugin/
  */
+document.addEventListener('DOMContentLoaded', function(){
 (function($) {
   var selectors = [];
 
@@ -479,3 +480,4 @@ $(document.body).on('appear', '.animatedParent', function(e, $affected){
  $(window).on('load',function(){
   $.force_appear();
  });
+});

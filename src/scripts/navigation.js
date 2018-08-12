@@ -1,3 +1,4 @@
+import zenscroll from './zenscroll-min.js';
 'use strict';
 document.addEventListener('DOMContentLoaded', initializeNavBar);
 //let secs = ['.scroll-to-start', '.scroll-to-about', '.scroll-to-offer', '.scroll-to-gallery', '.scroll-to-contact'];
@@ -87,4 +88,13 @@ function secondWayToLightTheButton() {
             btns[idx].classList.remove('setonscroll');
         }
     });
+}
+
+function objectToArray(objectToIterate) {
+    let x = objectToIterate.length;
+    let newArray = [];
+    for (let i = 0; i < x; i++) {
+        newArray.push(objectToIterate[i]);
+    }
+    return newArray;
 }

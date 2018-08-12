@@ -8,7 +8,7 @@ fit.cover(positioned, positioner) **/
 fit.aToB(positioned, positioner) **/
 /** Starts to listen for window resize;
 fit.listen(positioned, positioner) **/
-var fit = {
+export var fit = {
     setSizeXY: function (image, space) {
         let sizeX = image.offsetWidth;
         let sizeY = image.offsetHeight;
